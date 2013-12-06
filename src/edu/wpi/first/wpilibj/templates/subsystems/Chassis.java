@@ -49,7 +49,6 @@ public class Chassis extends Subsystem {
                 
 		drive = new RobotDrive (leftJaguar, leftJaguar2, rightJaguar, rightJaguar2);
 		// change constructor if we have more motors on drivetrain - i.e. 4 motors total
-		// 
 		drive.setSafetyEnabled(false);
 	}
 
@@ -106,8 +105,6 @@ public class Chassis extends Subsystem {
             //SmartDashboard.putNumber("Left Jaguar2:" , leftJaguar2.getSpeed());
             //SmartDashboard.putNumber("Right Jaguar2:", rightJaguar2.getSpeed()*-1.0);
             SmartDashboard.putString("Direction Status: ", "Dumper Forwards");
-            
-            //comments
         }
         
         public void driveAsClimber(Joystick leftStick, Joystick rightStick){
